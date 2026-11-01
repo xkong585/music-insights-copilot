@@ -1,12 +1,11 @@
 {
-  "created_before_run_utc": "2026-11-01T08:09:17.662431+00:00",
+  "created_before_run_utc": "2026-11-01T08:15:09.409900+00:00",
   "cases_sha256": "c1f32deee06fcd1e98d43d9d72a924504fda7182eb7f1a061c232380b1c35bc4",
   "system_prompt_sha256": "43159cf5d72dff7d0dd38d74c1c163022bbd6dc9dccd4e8110e1c2d5e0192cc7",
-  "model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "model": "work/music-build/hf/hub/models--mlx-community--Qwen3-4B-Instruct-2507-4bit/snapshots/50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
   "temperature": 0,
   "max_output_tokens": 150,
   "seed_order": 20261101,
   "sample_origin": "Author-written task and challenge questions; not real user conversations. Final prompt/model selected using the separate development-v1 run and development smoke checks. These new cases frozen before final execution; no tuning from final results.",
-  "scope": "One deterministic generation per case; English/Chinese narrow-domain task benchmark, not representative usability study; no production or causal improvement claim.",
-  "model_local_path_at_run": "work/music-build/hf/hub/models--mlx-community--Qwen3-4B-Instruct-2507-4bit/snapshots/50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b"
+  "scope": "One deterministic generation per case; English/Chinese narrow-domain task benchmark, not representative usability study; no production or causal improvement claim."
 }

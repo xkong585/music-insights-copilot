@@ -19,10 +19,10 @@ Real **Qwen3-4B local inference**, validated tool plans and parameterized DuckDB
 | Tool selection | 76.7% |
 | Keyword baseline exact match | 43.3% |
 | Valid output schema | 90.0% |
-| All-request p50, local | 0.74 s |
-| All-request p95, local | 0.90 s |
+| All-request p50, local | 0.70 s |
+| All-request p95, local | 0.84 s |
 
-These are author-written evaluation tasks, **not real users or fabricated listening records**. The initial 32-task development run failed because the smaller model copied schema option strings. That run is preserved in `evidence/development-v1/`. The revised prompt/model was fixed before the new final cases were executed. No improvements in user productivity, adoption or retention have been measured. One run per final case; narrow bilingual benchmark, not population accuracy or production latency. All failures are retained.
+These are author-written evaluation tasks, **not real users or fabricated listening records**. The initial 32-task development run failed because the smaller model copied schema option strings. That run is preserved in `evidence/development-v1/`. The revised prompt/model was fixed before the new final cases were executed. A backend-only rebuild stabilized bootstrap user ordering; the prior measurement is retained in `evidence/backend-v1/`. The final rerun uses the identical frozen model, prompt and questions. No improvements in user productivity, adoption or retention have been measured. One run per final case; narrow bilingual benchmark, not population accuracy or production latency. All failures are retained.
 
 ## Run the actual live product
 
@@ -60,4 +60,6 @@ Model: [MLX Community Qwen3-4B-Instruct-2507-4bit](https://huggingface.co/mlx-co
 
 Built a local Qwen-powered music analytics Copilot with constrained tool selection, parameterized SQL and source-linked numerical responses over real listening aggregates.
 
-Evaluated 30 frozen bilingual task cases against a keyword baseline; achieved 76.7% exact tool/filter accuracy with 0.90s all-request p95 in the local benchmark, retaining failures and separating offline task metrics from user outcomes.
+Evaluated 30 frozen bilingual task cases against a keyword baseline; achieved 76.7% exact tool/filter accuracy with 0.84s all-request p95 in the local benchmark, retaining failures and separating offline task metrics from user outcomes.
+
+See [failure analysis and release decision](docs/failure_analysis.md). This is a research prototype; the free-text planner is not recommended for unattended business decisions.
