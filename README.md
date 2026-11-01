@@ -1,10 +1,14 @@
 # Music Insights Copilot
 
+[![Validate evidence](https://github.com/xkong585/music-insights-copilot/actions/workflows/validate.yml/badge.svg)](https://github.com/xkong585/music-insights-copilot/actions/workflows/validate.yml)
+
 **Product job:** help a music product manager examine behavior, confirm metric definitions, switch cohorts and prepare an evidence review with fewer analyst handoffs.
 
 Real **Qwen3-4B local inference**, validated tool plans and parameterized DuckDB queries over real Last.fm aggregates. This is a language interface to auditable evidence; it is not unrestricted text-to-SQL.
 
-[Recorded-run showcase](https://xiangyi-music-product-lab.braveape12.chatgpt.site/copilot.html) (owner-private Sites preview) · [Product scope](docs/product_brief.md) · [Full runs and failures](evidence/runs.json) · [Measured benchmark](evidence/evaluation.json)
+[Recorded-run showcase](https://xkong585.github.io/music-insights-copilot/) · [Product scope](docs/product_brief.md) · [Full runs and failures](evidence/runs.json) · [Measured benchmark](evidence/evaluation.json)
+
+![Actual live local product](docs/assets/live-copilot.png)
 
 ## Measured final benchmark
 
