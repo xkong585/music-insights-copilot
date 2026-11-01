@@ -1,0 +1,4 @@
+duckdb==1.4.1
+pandas==2.3.3
+mlx-lm==0.30.7; sys_platform == 'darwin' and platform_machine == 'arm64'
+pytest==8.4.2

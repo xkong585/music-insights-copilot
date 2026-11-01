@@ -1,0 +1,12 @@
+{
+  "created_before_run_utc": "2026-11-01T08:06:36.879581+00:00",
+  "cases_sha256": "d960e9d2af1d90dbc12595a50690d318d648bd94c6eae28819d73006f0012a49",
+  "system_prompt_sha256": "f7f670be22c07408be381e09c567c3cfd44f5076fa0c872c6bcc688e86865976",
+  "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+  "temperature": 0,
+  "max_output_tokens": 150,
+  "seed_order": 20261101,
+  "sample_origin": "Author-written task and challenge questions; not real user conversations. Prompt designed before this locked evaluation, no tuning from these results.",
+  "scope": "One deterministic generation per case; English/Chinese narrow-domain task benchmark, not representative usability study; no production or causal improvement claim.",
+  "model_local_path_at_run": "work/music-build/hf/hub/models--mlx-community--Qwen2.5-1.5B-Instruct-4bit/snapshots/8b403126fc14f14cfc99bb4cfa72ecbc129ea677"
+}
